@@ -1,0 +1,1 @@
+echo "https://www.niceoppai.net/Solo-Leveling/" >> "subscribe.txt"
