@@ -19,12 +19,14 @@ for url in comic_list:
         tmp['name'] = raw_last_chap[3]
         tmp['link'] = raw_last_chap[1]
         tmp['published'] = date_string
+        print('.')
         ans.append(tmp)
     except KeyboardInterrupt:
         print("Exit by user")
         break
     except:
         print("Error . . Invalid link? No internet connection?")
+print()
 ans = sorted(ans, key = lambda i: i['published'])
 for r in ans:
     print(r['name'])
